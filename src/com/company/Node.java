@@ -1,7 +1,9 @@
 package com.company;
 
 import java.util.Scanner;
+
 public class Node {
+
     private String userName; //or email.
     private String password;
     private String companyName;
@@ -63,4 +65,6 @@ public class Node {
     public int compare(Node toCompare){
         return companyName.compareToIgnoreCase(toCompare.companyName);
     }
+
+    public int compare(String toCompare){ return companyName.compareToIgnoreCase(toCompare); }
 }
